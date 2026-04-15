@@ -1,6 +1,16 @@
 name: glass_morphism_plus
 description: "A high-performance, customizable Glassmorphism library for Flutter. Create stunning modern UIs with realistic Frosted Glass effects, shimmering border gradients, and optimized backdrop filtering."
 version: 0.0.1
+
+# Add this section
+screenshots:
+  - description: 'Profile showcase: Featuring avatar integration and stat columns on a frosted glass panel.'
+    path: assets/screenshots/ss1.png
+  - description: 'Dashboard UI: Demonstrating multiple glass cards with varying opacity and icon support.'
+    path: assets/screenshots/ss2.png
+  - description: 'Authentication Panel: Elegant login form layout using deep blur and rounded glass containers.'
+    path: assets/screenshots/ss3.png
+
 repository: https://github.com/amit142857/glass_morphism_plus
 
 environment:
