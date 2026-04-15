@@ -1,3 +1,7 @@
+## 0.0.5
+
+added extensic documantation
+
 ## 0.0.4
 
 updated the documentation
