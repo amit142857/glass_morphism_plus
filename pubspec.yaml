@@ -1,6 +1,6 @@
 name: glass_morphism_plus
 description: "A high-performance, customizable Glassmorphism library for Flutter. Create stunning modern UIs with realistic Frosted Glass effects, shimmering border gradients, and optimized backdrop filtering."
-version: 0.0.2
+version: 0.0.3
 
 # Add this section
 screenshots:
