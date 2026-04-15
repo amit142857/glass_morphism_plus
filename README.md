@@ -1,97 +1,41 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 💎 Glassmorphism Plus
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+[![pub package](https://img.shields.io/pub/v/glass_morphism_plus.svg)](https://pub.dev/packages/glass_morphism_plus)
+[![likes](https://img.shields.io/pub/likes/glass_morphism_plus.svg)](https://pub.dev/packages/glass_morphism_plus/score)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+A high-performance, customizable Glassmorphism library for Flutter. Create stunning modern UIs with realistic "Frosted Glass" effects and optimized backdrop filtering.
 
-💎 Glassmorphism Plus
-A high-performance, customizable Glassmorphism library for Flutter. Create stunning modern UIs with realistic "Frosted Glass" effects, shimmering border gradients, and optimized backdrop filtering.
+---
 
-Why "Plus"?
+## 📸 Showcase
 
-Most glassmorphism implementations in Flutter suffer from two things: high CPU usage and "flat" visuals. Glassmorphism Plus solves this by:
+| Profile UI | Dashboard | Security Panel |
+| :---: | :---: | :---: |
+| <img src="https://github.com/amit142857/glass_morphism_plus/blob/main/assets/screenshots/ss1.png?raw=true" width="250" /> | <img src="https://github.com/amit142857/glass_morphism_plus/blob/main/assets/screenshots/ss2.png?raw=true" width="250" /> | <img src="https://github.com/amit142857/glass_morphism_plus/blob/main/assets/screenshots/ss3.png?raw=true" width="250" /> |
 
-Optimized Rendering: Built to handle BackdropFilter efficiently to maintain 60 FPS even on mid-range devices.
+---
 
-Depth Simulation: Uses a unique dual-layer border gradient to simulate light refraction on the edges of the glass.
+## ✨ Why "Plus"?
 
-Fully Adaptive: Easily tweak blur intensity, opacity, and color to match any theme (Light, Dark, or Vibrant).
+Most glassmorphism implementations in Flutter suffer from high CPU usage and "flat" visuals. **Glassmorphism Plus** solves this:
 
-Key Features
+* 🚀 **Optimized Rendering:** Built to handle `BackdropFilter` efficiently to maintain 60 FPS.
+* 🎨 **Depth Simulation:** Uses unique dual-layer gradients to simulate light refraction on the edges.
+* ⚙️ **Fully Adaptive:** Easily tweak blur intensity, opacity, and color to match any theme.
 
-Realistic Blur: Utilizes ImageFilter.blur for a smooth frosted effect.
+## 🛠 Features
 
-Gradient Borders: High-control border styling to create the "glass edge" look.
+* **Realistic Blur:** Smooth frosted effect using `ImageFilter.blur`.
+* **Gradient Borders:** High-control styling for that "glass edge" look.
+* **Clip-Safe:** Handles `ClipRRect` logic automatically—no jagged edges.
+* **Versatile:** Perfect for cards, nav bars, and glass panels.
 
-Clip-Safe: Automatically handles ClipRRect logic so your glass edges never look jagged.
+---
 
-Versatile: Perfect for modern cards, navigation bars, and floating action buttons.
+## 🚀 Getting Started
 
-Visual Anatomy
+Add the dependency to your `pubspec.yaml`:
 
-The "Glass" effect is achieved through a specific layering of three components:
-
-The Background: High-contrast images or colors.
-
-The Filter: A blur sigma applied via BackdropFilter.
-
-The Tint: A semi-transparent color overlay to give the glass its "material" feel.
-
-Use Cases
-
-Profiles: Floating profile cards over vibrant backgrounds.
-
-Dashboards: Clean, modern data widgets.
-
-Login Screens: Elegant glass panels for input fields.
-
-
-## Example
-
-import 'package:flutter/material.dart';
-import 'package:glass_morphism_plus/glass_morphism_plus.dart';
-
-class GlassDemo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: NetworkImage('https://images.unsplash.com/photo-1550684848-fac1c5b4e853'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Center(
-          child: GlassContainer(
-            width: 300,
-            height: 200,
-            blur: 20,
-            opacity: 0.15,
-            borderRadius: 30,
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Icon(Icons.ac_unit, color: Colors.white, size: 40),
-                SizedBox(height: 10),
-                Text(
-                  "Glassmorphism Plus",
-                  style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-# glass_morphism_plus
+```yaml
+dependencies:
+  glass_morphism_plus: ^1.0.0
