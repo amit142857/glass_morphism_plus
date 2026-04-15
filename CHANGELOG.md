@@ -1,3 +1,7 @@
+## 0.0.4
+
+updated the documentation
+
 ## 0.0.3
 
 Updated code
